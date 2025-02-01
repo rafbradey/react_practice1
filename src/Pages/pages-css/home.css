@@ -1,0 +1,15 @@
+.home-container{
+    margin-top: 24px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    dispay: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.home-content{
+    border: 1px solid black;
+    display: flex;
+
+}

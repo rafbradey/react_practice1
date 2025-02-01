@@ -1,0 +1,21 @@
+nav{
+    padding: 4vh;
+    background-color: #007dfe;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navs{
+    margin-right: 16px;
+    color: white;
+    text-decoration: none;
+}
+

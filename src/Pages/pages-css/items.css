@@ -1,0 +1,145 @@
+
+.items-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+
+.items:hover{
+    background-color: #f5f5f5;
+}
+
+.items{
+    padding: 10px;
+    border-top: 1px solid black;
+
+
+}
+
+.items-inner-container{
+    /*border: 1px solid black; for checking*/
+    display: flex;
+    padding: 10px;
+
+
+}
+
+.info-button-separator{
+    display: flex;
+    width: 100%;
+    /*border: 1px solid black;*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#number{
+    font-weight: bold;
+    padding: 10px
+
+}
+
+.item-price{
+    font-weight: bold;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 20px;
+    height: 3.5vh;
+    width: 4vh;
+    color: #077eff;
+
+}
+.item-price p{
+    font-weight: 400;
+    font-size: 1.5vh;
+    color: black;
+
+}
+
+#item-name{
+    font-weight: 1000;
+    color: #676668;
+    padding: 10px;
+}
+
+#item-description{
+    margin-left: 15px;
+    color: #676668;
+
+}
+
+.item-quantity{
+    display: flex;
+    height: 3.5vh;
+    align-items: center;
+    /*border: 1px solid black;*/
+}
+
+#number{
+    background-color: #dfdfdf;
+    width: 1vw;
+    height: 1.9vh;
+    text-align: center;
+    border-radius: 2px;
+}
+
+#add{
+    background-color: #077eff;
+    border: none;
+    color: white;
+    height: 4vh;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#add:hover{
+    background-color: #035add;
+}
+
+#minus{
+    background-color: #5a93d3;
+    border: none;
+    color: white;
+    height: 4vh;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+#minus:hover{
+    background-color: #4a7cbf;
+}
+
+
+#number p {
+
+}
+
+.next-container{
+    padding: 10px;
+    border-top: 1px solid  #676668;
+    display: flex;
+    justify-content: center;
+}
+
+#next{
+    width: 50%;
+    margin-top: 1vh;
+    height: 4.5vh;
+    border-radius: 16px;
+    background-color:  #035add;
+    border: 1px solid white;
+}
+
+#next:hover{
+    background-color: #077eff;
+}
+
+#next p{
+    font-weight: bold;
+    font-size: 1.6vh;
+    color: white;
+}
+
