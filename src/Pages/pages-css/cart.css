@@ -1,0 +1,25 @@
+
+
+.cart-header{
+    border: 1px solid black;
+}
+
+.cart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2vh;
+    border: 1px solid black;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 2vh;
+
+}
+
+.cart-item-info{
+    border: 1px solid black;
+    margin-top: 2vh;
+    padding: 2vh;
+    display: flex;
+}
