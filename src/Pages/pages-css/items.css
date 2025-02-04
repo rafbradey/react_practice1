@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 25%;
+    margin-right: 25%;
     border: 3px solid black;
     border-radius: 16px;
     margin-top: 2vh;
@@ -15,10 +15,6 @@
 .outer-container{
     border: 1px solid black;
     padding: 30px;
-
-
-
-
 }
 
 #homeButton{
@@ -30,8 +26,6 @@
     margin-top: 1vh;
     margin-left: auto;
     margin-right: auto;
-
-
 }
 
 .items:hover{
@@ -62,12 +56,6 @@
 }
 
 
-#number{
-    font-weight: bold;
-    padding: 10px
-
-}
-
 .item-price{
     font-weight: bold;
     border: 2px solid black;
@@ -79,11 +67,12 @@
     color: #077eff;
 
 }
+
+
 .item-price p{
     font-weight: 400;
     font-size: 1.5vh;
     color: black;
-
 }
 
 #item-name{
@@ -98,29 +87,54 @@
 
 }
 
+
+
+
+
+
+
 .item-quantity{
     display: flex;
-    height: 3.5vh;
+    justify-content: center;
     align-items: center;
-    /*border: 1px solid black;*/
-}
-
-#number{
-    background-color: #dfdfdf;
-    width: 1vw;
-    height: 1.9vh;
     text-align: center;
-    border-radius: 2px;
+
+
 }
 
 #add{
     background-color: #077eff;
     border: none;
     color: white;
-    height: 4vh;
-
+    height: 3.5vh;
+    width: 1vw;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
+}
+
+.button-area{
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#number{
+   text-align: center;
+    background-color: #d8d8d8;
+    height: 1.1vh;
+    width: 1vw;
+    padding: 1vh;
+    font-weight: bold;
+    padding: 1.2vh;
+}
+
+.cart-item-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid black;
 }
 
 #add:hover{
@@ -131,7 +145,8 @@
     background-color: #5a93d3;
     border: none;
     color: white;
-    height: 4vh;
+    height: 3.5vh;
+    width: 1vw;
 
     border-bottom-left-radius: 8px;
     border-top-left-radius: 8px;
@@ -146,7 +161,9 @@
 }
 
 .next-container{
-    padding: 10px;
+    padding: 20px;
+    height: 1vh;
+
     border-top: 1px solid  #676668;
     display: flex;
     justify-content: center;

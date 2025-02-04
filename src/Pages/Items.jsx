@@ -15,21 +15,18 @@ export function Items() {
         setItems(newItems);
     };
 
-
-// Load quantities from localStorage on mount
     useEffect(() => {
         const storedItems = JSON.parse(localStorage.getItem("items")) || [];
-        if (storedItems.length > 0) {
+        if (storedItems.length > 0) { //update only if there are stored items, prevent react from overwriting this shit with null data
             const updatedItems = items.map(item => {
                 const storedItem = storedItems.find(stored => stored.id === item.id);
                 return storedItem ? { ...item, quantity: storedItem.quantity } : item;
             });
             setItems(updatedItems);
         }
-    }, []); // Empty dependency array ensures this runs only on mount
+    }, []);
 
 
-    // Save items with quantity > 0 to localStorage
     useEffect(() => {
         const itemsInCart = items.filter(item => item.quantity > 0);
         if (itemsInCart.length > 0) {
@@ -73,10 +70,12 @@ export function Items() {
                                 <div id="item-description"><span>{item.description}</span></div>
                                 </div>
 
+
+
                                 <div className="item-quantity">
-                                <button id="minus" onClick={() => decreaseQuantity(index)}>-</button>
-                                <div id="number" ><span>{item.quantity}</span></div>
-                                <button id="add" onClick={
+                                <button className="button-area" id="minus" onClick={() => decreaseQuantity(index)}>-</button>
+                                <div className="button-area" id="number" >{item.quantity}</div>
+                                <button className="button-area"  id="add" onClick={
                                     () => increaseQuantity(index)
                                 }>+</button>
                                 </div>
@@ -100,11 +99,17 @@ export function Items() {
 
         <div className="items-container">
             <div className="outer-container">
-
+                <h2 style={
+                    {textAlign: "center",
+                        marginBottom: "1vh",
+                    }
+                }>Available Promotions</h2>
             { getItems() }
+
+
             <div className="next-container">
                 <button id="next" >
-                    <Link to="/cart" id="cartLink"> <p>Next</p> </Link>
+                    <Link to="/cart" id="cartLink"> <p>Continue</p> </Link>
 
                 </button>
 

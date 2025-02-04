@@ -6,6 +6,7 @@ import { Home } from './Pages/Home.jsx'
 import { Cart } from './Pages/Cart.jsx'
 import { Items } from './Pages/Items.jsx'
 import Navbar from "./components/Navbar.jsx";
+import QrPopUp from "./components/QrPopUp.jsx";
 
 
 function App() {

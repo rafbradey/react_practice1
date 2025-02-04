@@ -1,0 +1,23 @@
+img {
+    width: 8vw;
+    height: 16vh;
+}
+
+.QR-Container {
+    position: fixed;
+    right: 1vw;
+    top: 75vh;
+
+}
+
+
+.QR-Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #077eff;
+    padding: 1vw;
+    color: white;
+}
